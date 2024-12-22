@@ -4,6 +4,6 @@ def word_frequency():
     count=Counter()
     for i in sentence:
         count[i]+=1
-    print("Each word with it frequency:")
+    print("Each word with its frequency:")
     return count
 print(word_frequency())
