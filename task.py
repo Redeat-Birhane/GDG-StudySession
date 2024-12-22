@@ -1,8 +1,9 @@
-def largest_number():
-    numbers=[]
-    count=int(input("Enter the number of  elements you wish to have in a list:"))
-    for i in range(count):
-        number=int(input(f'Enter number {i+1}'))
-        numbers.append(number)
-    return f'The largset number is {max(numbers)}'
-print(largest_number())
+from collections import Counter
+def word_frequency():
+    sentence=input("Enetr a sentence:")
+    count=Counter()
+    for i in sentence:
+        count[i]+=1
+    print("Each word with it frequency:")
+    return count
+print(word_frequency())
