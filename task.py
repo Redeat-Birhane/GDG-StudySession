@@ -1,6 +1,6 @@
 from collections import Counter
 def word_frequency():
-    sentence=input("Enetr a sentence:")
+    sentence=input("Enter a sentence:")
     count=Counter()
     for i in sentence:
         count[i]+=1
